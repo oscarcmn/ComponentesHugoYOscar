@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="bg-primary text-blanco flex justify-between items-center p-6">
+        <footer className="text-blanco flex justify-between items-center p-6" style={{ backgroundColor: 'blue' }}>
             {/* Izquierda: Icono y texto */}
             <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gray-300 flex items-center justify-center">
