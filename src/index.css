@@ -30,3 +30,66 @@
   --font-weight-medium: Medium;
   --font-weight-regular: Regular;
 }
+
+/* ESTILOS TIPOGRÁFICOS */
+.h1 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-md);
+  color: var(--negro);
+}
+
+.h2 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-md);
+  color: var(--negro);
+}
+
+.h3 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-md);
+  color: var(--negro);
+}
+
+.subtitle {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--negro);
+}
+
+.body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--font-letter-spacing-md);
+  color: var(--negro);
+}
+
+.bold {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--negro);
+}
+
+.small {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--negro);
+}
+
+.button-text {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-lg);
+  color: var(--negro);
+  text-transform: uppercase;
+}
