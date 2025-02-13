@@ -14,7 +14,9 @@ const Button: React.FC<ButtonProps> = ({ label, variant = "default" }) => {
   };
 
   return (
-    <button className={`${baseStyles} ${variants[variant]}`}>{label}</button>
+    <button type="button" className={`${baseStyles} ${variants[variant]}`}>
+      {label}
+    </button>
   );
 };
 

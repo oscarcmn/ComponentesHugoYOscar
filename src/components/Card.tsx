@@ -30,16 +30,6 @@ const CardContainer: React.FC = () => {
         subtitle="Subtítulo 1"
         description="Descripción corta aquí."
       />
-      <Card
-        title="Título 2"
-        subtitle="Subtítulo 2"
-        description="Otra descripción interesante."
-      />
-      <Card
-        title="Título 3"
-        subtitle="Subtítulo 3"
-        description="Más texto para completar la tarjeta."
-      />
     </div>
   );
 };
