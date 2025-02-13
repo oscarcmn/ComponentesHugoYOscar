@@ -133,3 +133,24 @@
 .bg-terciary {
   background-color: var(--terciary);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.border-primary {
+  border: 1px solid var(--primary);
+}
+
+.border-secondary {
+  border: 1px solid var(--secondary);
+}
+
+.border-terciary {
+  border: 1px solid var(--terciary);
+}
