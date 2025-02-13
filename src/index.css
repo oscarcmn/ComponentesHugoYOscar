@@ -93,3 +93,43 @@
   color: var(--negro);
   text-transform: uppercase;
 }
+
+.text-blanco {
+  color: var(--blanco);
+}
+
+.text-negro {
+  color: var(--negro);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-terciary {
+  color: var(--terciary);
+}
+
+.bg-blanco {
+  background-color: var(--blanco);
+}
+
+.bg-negro {
+  background-color: var(--negro);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-terciary {
+  background-color: var(--terciary);
+}
