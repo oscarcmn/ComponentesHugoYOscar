@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* COLORS */
+@theme {
+  /* Mode 1 */
+  /* color */
+  --color-blanco-500: #ffffff;
+  --color-negro-500: #000000;
+  --color-primary-500: #2a003a;
+  --color-secondary-500: #01008a;
+  --color-terciary-500: #46d5b3;
+  --font-letter-spacing-md: -0.0625rem;
+  --font-letter-spacing-lg: 0.125rem;
+  --font-line-height-md: 8.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2.5rem;
+  --font-size-2xl: 4rem;
+  /* string */
+  --fontfamilybody: Work Sans;
+  --fontfamilyheader: Segoe UI;
+  --fontweightbold: Bold;
+  --fontweightmedium: Medium;
+  --fontweightregular: Regular;
+}

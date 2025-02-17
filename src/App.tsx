@@ -6,10 +6,10 @@ import Header from "./components/Header";
 import Input from "./components/Input";
 
 function App() {
-
-
   const [inputValue, setInputValue] = useState("");
-  const [status, setStatus] = useState<"normal" | "hover" | "valid" | "error">("normal");
+  const [status, setStatus] = useState<"normal" | "hover" | "valid" | "error">(
+    "normal"
+  );
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (value: string) => {
@@ -33,7 +33,12 @@ function App() {
     <>
       <div>
         <Header />
-        <Card />
+        <Card
+          title="Título 1"
+          subtitle="Subtítulo 1"
+          description="Descripción corta aquí."
+          imagen="imagen"
+        />
 
         <Input
           label="Correo Electrónico"

@@ -1,12 +1,12 @@
 import React from "react";
 
-const Header: React.FC = () => {
+function Header() {
   return (
     <header className="bg-purple-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <span className="text-gray-300">VO</span> VENDE+
+          <span className="text-gray-300">VENDE + ONLINE</span>
         </div>
 
         {/* Navigation Links */}
@@ -42,6 +42,6 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
