@@ -17,12 +17,12 @@ interface InputProps {
 function Input({ placeholder, initialValue = "", type, onChange, label, isDisabled = false, status = "normal", errorMessage = "", onMouseEnter, onMouseLeave }: InputProps) {
     const [value, setValue] = useState(initialValue);
 
-    let borderColor = "border-primary";
+    let borderColor = "border-black";
     let icon = null;
 
     if (status === "valid") {
-        borderColor = "border-terciary";
-        icon = <CheckCircleIcon className="text-terciary w-5 h-5" />;
+        borderColor = "border-teal-400";
+        icon = <CheckCircleIcon className="text-teal-400 w-5 h-5" />;
     }
     if (status === "error") {
         borderColor = "border-red-500";

@@ -12,16 +12,29 @@ function App() {
   );
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleInputChange = (value: string) => {
+  const handleInputChange = (value: string, type: "text" | "email" | "password") => {
     setInputValue(value);
 
     if (value.length > 0) {
-      if (value.includes("@")) {
+      if (type === "email") {
+        if (value.includes("@")) {
+          setStatus("valid");
+          setErrorMessage("");
+        } else {
+          setStatus("error");
+          setErrorMessage("Por favor, ingrese un correo electrónico válido.");
+        }
+      } else if (type === "password") {
+        if (value.length >= 4) {
+          setStatus("valid");
+          setErrorMessage("");
+        } else {
+          setStatus("error");
+          setErrorMessage("La contraseña debe tener al menos 4 caracteres.");
+        }
+      } else {
         setStatus("valid");
         setErrorMessage("");
-      } else {
-        setStatus("error");
-        setErrorMessage("Por favor, ingrese un correo electrónico válido.");
       }
     } else {
       setStatus("normal");
@@ -31,26 +44,46 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="mb-4">
         <Header />
-        <Card
-          title="Título 1"
-          subtitle="Subtítulo 1"
-          description="Descripción corta aquí."
-          imagen="imagen"
-        />
+      </div>
+      <div>
+        <div className="flex flex-row justify-between space-x-1">
+          <Card
+            title="Título 1"
+            subtitle="Subtítulo 1"
+            description="Descripción corta aquí."
+            imagen="imagen"
+          />
+          <Card
+            title="Título 1"
+            subtitle="Subtítulo 1"
+            description="Descripción corta aquí."
+            imagen="imagen"
+          />
+          <Card
+            title="Título 1"
+            subtitle="Subtítulo 1"
+            description="Descripción corta aquí."
+            imagen="imagen"
+          />
+        </div>
 
-        <Input
-          label="Correo Electrónico"
-          placeholder="Escribe tu correo"
-          type="email"
-          initialValue={inputValue}
-          onChange={handleInputChange}
-          status={status}
-          errorMessage={errorMessage}
-        />
-
-        <Button label="Click me" />
+        <div className="flex flex-col items-center space-y-4 mt-4">
+          <Input
+            label="Contraseña"
+            placeholder="Escribe tu contraseña"
+            type="password"
+            initialValue={inputValue}
+            onChange={(value) => handleInputChange(value, "password")}
+            status={status}
+            errorMessage={errorMessage}
+          />
+          <Button label="Click me" />
+          <Button label="Click me" variant="secondary" />
+        </div>
+      </div>
+      <div className="pt-4">
         <Footer />
       </div>
     </>

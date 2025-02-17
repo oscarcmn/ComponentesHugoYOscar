@@ -1,15 +1,11 @@
-import React from "react";
-
 function Header() {
   return (
     <header className="bg-purple-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold">
-          <span className="text-gray-300">VENDE + ONLINE</span>
+        <div className="w-25 h-25 flex items-center justify-center">
+          <img src="../../logo.png" alt="Logo" className="w-full h-full object-cover" />
         </div>
 
-        {/* Navigation Links */}
         <nav>
           <ul className="flex space-x-6">
             <li>

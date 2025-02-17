@@ -1,26 +1,27 @@
 function Footer() {
     return (
-        <div className="bg-primary">
-            <footer className="text-blanco grid-container items-center p-6 ">
-                <div className="">
-                    <div className="w-40 h-12 flex items-center justify-center">
-                        <span className="text-negro"><img src="../../logo.png" alt="" /></span>
+        <div className="bg-purple-900 py-3">
+            <div className="container mx-auto px-40 flex justify-between items-center">
+                <div className="flex items-center gap-4">
+                    <div className="w-25 h-25 flex items-center justify-center">
+                        <img src="../../logo.png" alt="Logo" className="w-full h-full object-cover" />
                     </div>
-                    <div className="text-sm">
+                    <div className="text-white text-sm">
                         <p className="leading-tight">Texto 1</p>
                         <p className="leading-tight">Texto 2</p>
                         <p className="leading-tight">Texto 3</p>
                     </div>
                 </div>
 
-                <div className="text-sm text-right">
+                {/* Texto alineado a la derecha */}
+                <div className="text-white text-sm text-right">
                     <p className="leading-tight">Texto 4</p>
                     <p className="leading-tight">Texto 5</p>
                 </div>
-            </footer>
+            </div>
         </div>
     );
 }
 
+export default Footer;
 
-export default Footer
