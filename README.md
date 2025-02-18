@@ -16,8 +16,8 @@ A continuación se muestran algunas capturas de pantalla del diseño en **Figma*
 ![Diseño en Figma](/public/SISTEMADISEÑO2.png)
 
 ### Diseño web
-![Diseñoweb] (/public/diseñoweb1.png)
-![Diseñoweb] (/public/diseñoweb2.png)
+![Diseño en Figma](/public/diseñoweb1.png)
+![Diseño en Figma](/public/diseñoweb2.png)
 
 
 ### Código de Tailwind CSS
