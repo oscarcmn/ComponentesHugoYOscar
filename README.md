@@ -18,44 +18,37 @@ A continuación se muestran algunas capturas de pantalla del diseño en **Figma*
 
 ### Código de Tailwind CSS
 ````
-/** @type {import('tailwindcss').Config} */
-export default {
-    theme: {
-        extend: {
-            colors: {
-                blanco: '#ffffff',
-                negro: '#000000',
-                primary: '#2a003a',
-                secondary: '#01008a',
-                terciary: '#46d5b3',
-            },
-            fontFamily: {
-                body: ['"Work Sans"', 'sans-serif'],
-                header: ['"Segoe UI"', 'sans-serif'],
-            },
-            fontSize: {
-                sm: '0.875rem',
-                md: '1rem',
-                lg: '1.5rem',
-                xl: '2.5rem',
-                '2xl': '4rem',
-            },
-            fontWeight: {
-                bold: 'bold',
-                medium: '500',
-                regular: '400',
-            },
-            letterSpacing: {
-                md: '-0.0625rem',
-                lg: '0.125rem',
-            },
-            lineHeight: {
-                md: '8.75rem',
-            },
-        },
-    },
-    plugins: [],
-};
+
+@import "tailwindcss";
+
+
+@theme {
+  /* Mode 1 */
+  /* color */
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --color-primary: #2a003a;
+  --color-secondary: #01008a;
+  --color-terciary: #46d5b3;
+  --tacking-md: -0.0625rem;
+  --tracking-lg: 0.125rem;
+  --leading-md: 8.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2.5rem;
+  --text-2xl: 4rem;
+  /* string */
+  --font-body: "Work Sans", sans-serif;
+  --text-header: "Segoe UI", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+
+
+}
+
+
 ````
 ## Enlace al Sistema de Diseño en Figma
 
