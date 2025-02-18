@@ -18,9 +18,10 @@
   --text-xl: 2.5rem;
   --text-2xl: 4rem;
   /* string */
-  --font-family-body: "Work Sans", medium;
+  --font-family-body: "Work Sans", sans-serif;
+  --font-family-bold: "Work Sans", sans-serif;
   --font-medium: Medium;
   --font-regular: Regular;
   --font-bold: bold;
-  --font-family-header: "Segoe UI";
+  --font-family-header: "Segoe UI", sans-serif;
 }

@@ -7,10 +7,10 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ label, variant = "default" }) => {
   const baseStyles =
-    "px-4 py-2 font-bold text-white rounded-lg shadow-md transition-colors duration-300 uppercase tracking-lg";
+    "px-4 py-2 text-sm text-white rounded-lg shadow-md transition-colors duration-300 uppercase font-family-bold";
   const variants = {
-    default: "bg-blue-900 hover:bg-blue-700",
-    secondary: "bg-teal-400 text-white hover:bg-teal-500",
+    default: "bg-primary hover:bg-secondary",
+    secondary: "bg-terciary text-white hover:bg-teal-500",
   };
 
   return (
