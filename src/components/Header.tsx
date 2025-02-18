@@ -7,7 +7,7 @@ function Header() {
         </div>
 
         <nav >
-          <ul className="flex space-x-6 font-family-header">
+          <ul className="flex space-x-6 font-header font-bold">
             <li>
               <a href="#" className="hover:text-gray-300 ">
                 HOME
