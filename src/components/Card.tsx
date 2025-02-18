@@ -13,9 +13,9 @@ function Card({ title, subtitle, description, imagen }: CardProps) {
         <span className="text-white font-bold">{imagen}</span>
       </div>
       <div className="mt-4">
-        <h2 className="text-lg font-semibold">{title}</h2>
-        <h3 className="text-sm text-gray-600">{subtitle}</h3>
-        <p className="text-gray-700 mt-2">{description}</p>
+        <h2 className="text-lg font-bold font-header ">{title}</h2>
+        <h3 className="text-sm font-header font-regular">{subtitle}</h3>
+        <p className="font-body text-md mt-2">{description}</p>
       </div>
     </div>
   );

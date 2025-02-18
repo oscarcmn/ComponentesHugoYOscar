@@ -31,7 +31,7 @@ function Input({ placeholder, initialValue = "", type, onChange, label, isDisabl
 
     return (
         <div className="flex flex-col">
-            <label className="text-primary font-medium mb-1">{label}</label>
+            <label className="text-primary font-header text-md font-medium mb-1">{label}</label>
             <div
                 className={`flex items-center border-2 rounded-md p-2 ${borderColor} bg-blanco`}
                 onMouseEnter={onMouseEnter}
@@ -46,7 +46,7 @@ function Input({ placeholder, initialValue = "", type, onChange, label, isDisabl
                         onChange(event.target.value);
                     }}
                     disabled={isDisabled}
-                    className="w-full text-negro text-lg font-medium focus:outline-none"
+                    className="w-full font-body text-negro text-md font-medium focus:outline-none"
                 />
                 {icon && <div className="ml-2">{icon}</div>}
             </div>
